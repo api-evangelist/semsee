@@ -1,0 +1,127 @@
+aid: semsee
+url: https://raw.githubusercontent.com/api-evangelist/semsee/refs/heads/main/apis.yml
+name: Semsee
+kind: company
+description: Semsee is a digital small-commercial insurance quoting platform built
+  on the SEMCI (Single Entry, Multiple Company Interface) principle, connecting
+  independent agents to 50+ carriers and MGAs across multiple lines of business via
+  API and RPA integrations. The platform handles submissions, multi-carrier quoting,
+  proposals, and binding. Semsee exposes a partner Upload/Download (AMS) integration
+  capability and SSO rather than a public, self-serve developer API. Semsee was
+  acquired by iBynd in March 2026.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Insurance
+- Insurtech
+- Commercial Insurance
+- Quoting
+- Submissions
+created: '2026-06-25'
+modified: '2026-06-25'
+specificationVersion: '0.19'
+apis:
+- aid: semsee:semsee-submissions-api
+  name: Semsee Submissions API
+  tags:
+  - Submissions
+  - Applications
+  - ACORD
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://semsee.com/partners
+  baseURL: ''
+  properties:
+  - url: https://semsee.com/partners
+    type: Documentation
+  - url: openapi/semsee-openapi.yml
+    type: OpenAPI
+  - url: collections/semsee.postman_collection.json
+    type: PostmanCollection
+  - url: collections/semsee.opencollection.json
+    type: OpenCollection
+  description: Partner-gated Upload/Download integration that pushes ACORD-based
+    application and submission data from an agency management system (AMS) into the
+    Semsee platform for multi-carrier quoting. No public, self-serve developer
+    reference, endpoints, or base URL are documented; integration requires Semsee
+    development resources and a partner agreement.
+- aid: semsee:semsee-quotes-api
+  name: Semsee Quotes API
+  tags:
+  - Quotes
+  - Rating
+  - Download
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://semsee.com/partners
+  baseURL: ''
+  properties:
+  - url: https://semsee.com/partners
+    type: Documentation
+  - url: openapi/semsee-openapi.yml
+    type: OpenAPI
+  - url: collections/semsee.postman_collection.json
+    type: PostmanCollection
+  - url: collections/semsee.opencollection.json
+    type: OpenCollection
+  description: Partner-gated download of multi-carrier quote results back into an
+    AMS or commercial rater so agents can compare and bind without re-keying. No
+    public endpoint, schema, or base URL is published; access is via partner
+    integration only.
+- aid: semsee:semsee-carriers-api
+  name: Semsee Carriers API
+  tags:
+  - Carriers
+  - MGA
+  - Appetite
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://semsee.com/carriers-mgas-semsee
+  baseURL: ''
+  properties:
+  - url: https://semsee.com/carriers-mgas-semsee
+    type: Documentation
+  - url: openapi/semsee-openapi.yml
+    type: OpenAPI
+  - url: collections/semsee.postman_collection.json
+    type: PostmanCollection
+  - url: collections/semsee.opencollection.json
+    type: OpenCollection
+  description: Carrier and MGA connectivity through which Semsee routes submissions
+    to 50+ markets via carrier API and RPA integrations, including class-code and
+    market-appetite matching. This is internal platform connectivity; no public
+    developer-facing carrier API is documented.
+- aid: semsee:semsee-webhooks-api
+  name: Semsee Webhooks API
+  tags:
+  - Webhooks
+  - Events
+  - Notifications
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://semsee.com/partners
+  baseURL: ''
+  properties:
+  - url: https://semsee.com/partners
+    type: Documentation
+  - url: openapi/semsee-openapi.yml
+    type: OpenAPI
+  - url: collections/semsee.postman_collection.json
+    type: PostmanCollection
+  - url: collections/semsee.opencollection.json
+    type: OpenCollection
+  description: No public webhook or event-notification surface is documented by
+    Semsee. This entry is a placeholder reflecting that event-driven callbacks, if
+    they exist, are part of a private partner integration and are not publicly
+    specified.
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/semsee
+- type: Website
+  url: https://www.semsee.com
+- type: Documentation
+  url: https://help.semsee.com
+- type: Plans
+  url: plans/semsee-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/semsee-rate-limits.yml
+- type: FinOps
+  url: finops/semsee-finops.yml
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

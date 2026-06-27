@@ -1,0 +1,100 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Semsee
+providerId: semsee
+created: '2026-06-25'
+modified: '2026-06-25'
+reconciled: false
+tags:
+- Insurance
+- Insurtech
+- Commercial Insurance
+- Quoting
+- Submissions
+- Plans
+description: >-
+  Semsee is a sales-led SaaS quoting platform for independent insurance
+  agencies, carriers, and MGAs. Pricing is not published on the Semsee website
+  and is arranged through direct sales / partnership conversations. Agency
+  access, partner Upload/Download (AMS) integration, and carrier/MGA
+  connectivity are all negotiated rather than offered on a public self-serve
+  price list. No usage-metered, per-call, or tiered public pricing is
+  documented; therefore these plans are NOT reconciled.
+notes: >-
+  No public pricing page exists. Values below are placeholders reflecting a
+  sales-led model. Reconcile against a Semsee order form or partner agreement
+  if one becomes available.
+sources:
+- https://semsee.com/
+- https://semsee.com/partners
+- https://semsee.com/carriers-mgas-semsee
+plans:
+- id: semsee-agency
+  name: Agency Platform
+  type: contract
+  description: >-
+    Access to the Semsee quoting platform for independent agencies (submissions,
+    multi-carrier quoting, proposals, binding). Pricing arranged via Semsee
+    sales; not publicly listed.
+  entries:
+  - label: Agency Subscription
+    name: agency_subscription
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: year
+    geo: global
+    unit: 1
+    price: contact sales
+    userMultiplied: false
+  elements:
+  - name: Multi-Carrier Quoting
+  - name: Submissions
+  - name: Proposals
+  - name: Binding
+- id: semsee-partner
+  name: Partner / AMS Integration
+  type: contract
+  description: >-
+    Partner-gated Upload/Download API and SSO integration between a partner's
+    agency management system and Semsee. Requires a partner agreement and
+    development resources; pricing not publicly disclosed.
+  entries:
+  - label: Partner Integration Agreement
+    name: partner_integration
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: year
+    geo: global
+    unit: 1
+    price: contact sales
+    userMultiplied: false
+  elements:
+  - name: Upload/Download API
+  - name: SSO Integration
+- id: semsee-carrier
+  name: Carrier / MGA Connectivity
+  type: contract
+  description: >-
+    Carrier and MGA participation on the Semsee distribution platform via API
+    and RPA connectivity. Commercial terms negotiated directly with Semsee.
+  entries:
+  - label: Carrier/MGA Agreement
+    name: carrier_agreement
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: year
+    geo: global
+    unit: 1
+    price: contact sales
+    userMultiplied: false
+  elements:
+  - name: Carrier API Connectivity
+  - name: RPA Connectivity
+  - name: Appetite Matching
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

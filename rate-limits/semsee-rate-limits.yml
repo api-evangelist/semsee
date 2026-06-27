@@ -1,0 +1,42 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Semsee
+providerId: semsee
+created: '2026-06-25'
+modified: '2026-06-25'
+reconciled: false
+tags:
+- Insurance
+- Insurtech
+- Commercial Insurance
+- Quoting
+- Submissions
+- Rate Limiting
+- Quotas
+- Throttling
+description: >-
+  Semsee does not publish a public developer API reference, so no rate limits,
+  quotas, throttling thresholds, or error/response codes are documented. Any
+  limits that apply to the partner Upload/Download (AMS) integration would be
+  defined privately within a partner agreement. The values below are
+  placeholders and are NOT reconciled.
+notes: >-
+  No public rate-limit documentation exists. Reconcile against Semsee partner
+  integration documentation if access is granted.
+sources:
+- https://semsee.com/
+- https://semsee.com/partners
+responseCodes: {}
+limits:
+- name: Partner Integration Limits
+  scope: partner
+  metric: requests
+  limit: see partner agreement
+  notes: Any throughput or volume limits on the Upload/Download integration are private and not publicly documented.
+policies:
+- name: Partner-Gated Access
+  description: API access is gated behind a partner agreement; no public, self-serve API or documented limits exist.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

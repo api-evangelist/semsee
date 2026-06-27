@@ -1,0 +1,15 @@
+{
+  "info": {
+    "_postman_id": "a7c1d9e2-5b34-4f8a-9c2e-1f6b0d4a7e10",
+    "name": "Semsee API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Semsee is a digital small-commercial insurance quoting platform (SEMCI) connecting independent agents to 50+ carriers and MGAs via API and RPA integrations. Semsee does NOT publish a public, self-serve developer API. Programmatic access is limited to a partner-gated Upload/Download (AMS) integration and SSO that require a partner agreement and Semsee development resources. No public endpoint paths, request/response schemas, authentication scheme, or production base URL are documented, so no requests are defined in this collection. Semsee was acquired by iBynd in March 2026.\n\nContact: https://semsee.com/contact",
+      "type": "text/plain"
+    }
+  },
+  "item": [],
+  "event": [],
+  "variable": [],
+  "auth": null
+}

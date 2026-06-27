@@ -1,0 +1,85 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Semsee
+providerId: semsee
+created: '2026-06-25'
+modified: '2026-06-25'
+reconciled: false
+tags:
+- Insurance
+- Insurtech
+- Commercial Insurance
+- Quoting
+- Submissions
+- FinOps
+- Cost Management
+- FOCUS
+description: >-
+  FinOps view of Semsee spend. Semsee is a sales-led SaaS quoting platform with
+  no public, usage-metered pricing and no public developer API. Costs are
+  governed by negotiated agency, partner-integration, and carrier/MGA
+  agreements rather than per-call or per-token metering. Because no public
+  pricing or metered API usage is documented, the cost meters below are
+  illustrative placeholders and this artifact is NOT reconciled.
+notes: >-
+  No public pricing or billing exports are documented. Reconcile against a
+  Semsee order form / partner agreement during reconciliation.
+sources:
+- https://semsee.com/
+- https://semsee.com/partners
+- https://focus.finops.org/focus-specification/v1-3/
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: Semsee
+serviceCategory: Insurance Technology
+billingModel:
+  pricingCategory: Subscription / Contract
+  billingFrequency: Negotiated
+  billingCurrency: USD
+  chargeCategories:
+  - Purchase
+focusColumns:
+  ServiceName: Semsee
+  ServiceCategory: Insurance Technology
+  ProviderName: Semsee
+  PublisherName: Semsee
+  InvoiceIssuerName: Semsee
+  BillingCurrency: USD
+  ChargeCategory: Purchase
+  PricingCategory: Subscription / Contract
+meters:
+- name: agency_subscription
+  description: Negotiated agency platform subscription fee. Not publicly priced or metered.
+  unit: contract
+  aggregation: sum
+  dimensions:
+  - account
+- name: partner_integration
+  description: Negotiated partner Upload/Download (AMS) integration fee, if any. Not publicly priced.
+  unit: contract
+  aggregation: sum
+  dimensions:
+  - account
+- name: carrier_connectivity
+  description: Negotiated carrier/MGA connectivity terms. Not publicly priced or metered.
+  unit: contract
+  aggregation: sum
+  dimensions:
+  - account
+principles:
+- name: Visibility
+  description: Track Semsee subscription and partner-integration invoices; no public usage export or metered API exists.
+- name: Allocation
+  description: Map Semsee agency/partner/carrier agreements to the relevant business units.
+- name: Optimization
+  description: Right-size agency seats and partner-integration scope against actual quoting volume; negotiate at renewal.
+- name: Accountability
+  description: Assign an owner for the Semsee relationship and review contract spend at renewal.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

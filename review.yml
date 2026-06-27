@@ -1,0 +1,104 @@
+aid: semsee
+name: Semsee
+review:
+  question: Does Semsee expose a documented public developer API?
+  answer: false
+  date: '2026-06-25'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was created. Semsee publishes no public event,
+    streaming, SSE, or WebSocket surface, and no public REST API reference,
+    so there is no documented asynchronous interface to model.
+findings:
+  summary: |
+    Semsee is a digital small-commercial insurance quoting platform built on
+    the SEMCI (Single Entry, Multiple Company Interface) principle. It connects
+    independent agents to 50+ carriers and MGAs across multiple lines of
+    business via carrier API and RPA integrations, and provides submissions,
+    multi-carrier quoting, ACORD upload/download, proposals, and binding.
+
+    Semsee does NOT publish a public, self-serve developer API. The product is
+    primarily a SaaS web application (login portal at api-v2.semsee.com). The
+    only programmatic integration surfaced publicly is a partner-gated
+    "Upload/Download API" capability for agency management system (AMS)
+    integration, described on the partners page as "available (development
+    resources required)," plus optional SSO integration. No public API
+    reference, endpoint paths, request/response schemas, authentication scheme,
+    production base URL, OpenAPI document, or developer portal could be located.
+    A Help Center exists at help.semsee.com, but no developer/API documentation
+    was found there publicly. No public GitHub organization for Semsee was
+    found.
+
+    Because no endpoints are publicly documented, the OpenAPI artifact in this
+    repository intentionally contains an empty paths object with an accurate
+    description rather than fabricated operations. Plans, rate limits, and
+    FinOps artifacts are marked reconciled: false to reflect the sales-led,
+    partner-gated, non-public nature of the offering.
+  ownership:
+    note: |
+      The task framing described Semsee as "part of Bold Penguin / American
+      Family." That is NOT accurate based on available reporting. Bold Penguin
+      (a competing small-commercial insurtech) was acquired by American Family
+      Insurance in January 2021. Semsee is a separate company, founded in 2017
+      (formerly MRLN) and based in Brooklyn, New York, and was acquired by
+      iBynd in March 2026. The acquisition is positioned to build end-to-end
+      digital infrastructure for commercial insurance distribution
+      (submission through quote, bind, and policy servicing). Bold Penguin and
+      Semsee are competitors, not the same entity.
+    currentOwner: iBynd
+    acquisitionDate: '2026-03-24'
+    formerName: MRLN
+    founded: '2017'
+    headquarters: Brooklyn, New York
+  apiAvailability:
+    publicSelfServeApi: false
+    partnerGatedIntegration: true
+    integrationType: Upload/Download (AMS) integration + SSO; carrier connectivity via API and RPA
+    publicOpenApi: false
+    publicDeveloperPortal: false
+    publicGitHubOrg: false
+  transports:
+    - protocol: REST
+      scheme: https
+      baseURL: not publicly documented
+      documented: false
+      note: A web application login exists at https://api-v2.semsee.com/; no public REST API reference is published.
+    - protocol: SSE
+      scheme: https
+      documented: false
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+sources:
+  - url: https://semsee.com/
+    type: Website
+    note: Describes the small-commercial quoting platform and carrier coverage; no public developer API documented.
+  - url: https://semsee.com/partners
+    type: Documentation
+    note: Mentions an Upload/Download API capability "available (development resources required)" and optional SSO; no endpoints or base URL.
+  - url: https://semsee.com/carriers-mgas-semsee
+    type: Documentation
+    note: Carrier/MGA connectivity via API and RPA; internal platform connectivity, not a public developer carrier API.
+  - url: https://api-v2.semsee.com/
+    type: Application
+    note: Web application login portal; not a documented public API.
+  - url: https://coverager.com/ibynd-acquires-semsee-to-create-end-to-end-digital-infrastructure-for-commercial-insurance-distribution/
+    type: News
+    note: iBynd announced acquisition of Semsee on 2026-03-24.
+  - url: https://www.insurancejournal.com/news/national/2021/01/14/597555.htm
+    type: News
+    note: American Family Insurance acquired Bold Penguin (a separate, competing company) in January 2021.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No public API surface (REST, SSE, or WebSocket) is documented, so no
+    AsyncAPI or OpenAPI operations were authored. apis.yml documents the
+    provider honestly with partner-gated integration entries, and the OpenAPI
+    file uses an empty paths object with an accurate description to avoid
+    fabricating an interface. Ownership was corrected to iBynd (March 2026),
+    distinct from Bold Penguin / American Family.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

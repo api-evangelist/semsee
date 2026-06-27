@@ -1,0 +1,9 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Semsee API",
+    "version": "0.0.0",
+    "description": "Semsee is a digital small-commercial insurance quoting platform (SEMCI) connecting independent agents to 50+ carriers and MGAs via API and RPA integrations. Semsee does NOT publish a public, self-serve developer API. Programmatic access is limited to a partner-gated Upload/Download (AMS) integration and SSO that require a partner agreement and Semsee development resources. No public endpoint paths, request/response schemas, authentication scheme, or production base URL are documented, so no items are defined in this collection. Semsee was acquired by iBynd in March 2026."
+  },
+  "items": []
+}
