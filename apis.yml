@@ -110,6 +110,12 @@ apis:
     they exist, are part of a private partner integration and are not publicly
     specified.
 common:
+- type: TrustCenter
+  url: security/semsee-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/semsee-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/semsee-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/semsee
 - type: Website
@@ -122,6 +128,8 @@ common:
   url: rate-limits/semsee-rate-limits.yml
 - type: FinOps
   url: finops/semsee-finops.yml
+- url: https://semsee.com/blog/rss.xml
+  type: Blog
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
