@@ -1,0 +1,14 @@
+{
+  "provider": "semsee",
+  "sources": [
+    "semsee-openapi.yml"
+  ],
+  "outputs": [],
+  "archived": [
+    "archived semsee-openapi.yml"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
