@@ -44,7 +44,7 @@ apis:
   properties:
   - url: https://semsee.com/partners
     type: Documentation
-  - url: openapi/semsee-openapi.yml
+  - url: openapi/_original/semsee-openapi.yml
     type: OpenAPI
   - url: collections/semsee.postman_collection.json
     type: PostmanCollection
@@ -67,7 +67,7 @@ apis:
   properties:
   - url: https://semsee.com/partners
     type: Documentation
-  - url: openapi/semsee-openapi.yml
+  - url: openapi/_original/semsee-openapi.yml
     type: OpenAPI
   - url: collections/semsee.postman_collection.json
     type: PostmanCollection
@@ -89,7 +89,7 @@ apis:
   properties:
   - url: https://semsee.com/carriers-mgas-semsee
     type: Documentation
-  - url: openapi/semsee-openapi.yml
+  - url: openapi/_original/semsee-openapi.yml
     type: OpenAPI
   - url: collections/semsee.postman_collection.json
     type: PostmanCollection
@@ -111,7 +111,7 @@ apis:
   properties:
   - url: https://semsee.com/partners
     type: Documentation
-  - url: openapi/semsee-openapi.yml
+  - url: openapi/_original/semsee-openapi.yml
     type: OpenAPI
   - url: collections/semsee.postman_collection.json
     type: PostmanCollection
