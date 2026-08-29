@@ -9,6 +9,17 @@ description: Semsee is a digital small-commercial insurance quoting platform bui
   proposals, and binding. Semsee exposes a partner Upload/Download (AMS) integration
   capability and SSO rather than a public, self-serve developer API. Semsee was
   acquired by iBynd in March 2026.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
