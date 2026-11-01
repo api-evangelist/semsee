@@ -1,4 +1,4 @@
-# Semsee (semsee)
+# Semsee
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,109 +66,120 @@
 
 Semsee is a digital small-commercial insurance quoting platform built on the SEMCI (Single Entry, Multiple Company Interface) principle, connecting independent agents to 50+ carriers and MGAs across multiple lines of business via API and RPA integrations. The platform handles submissions, multi-carrier quoting, proposals, and binding. Semsee exposes a partner Upload/Download (AMS) integration capability and SSO rather than a public, self-serve developer API. Semsee was acquired by iBynd in March 2026.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/semsee/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/semsee/refs/heads/main/apis.yml)
+**Areas:** Insurance · Insurtech · Commercial Insurance · Quoting · Submissions
 
-## Tags
+## Semsee on APIs.io
 
-- Insurance
-- Insurtech
-- Commercial Insurance
-- Quoting
-- Submissions
+Everything profiled for Semsee is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/semsee/](https://apis.io/providers/semsee/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (4)
 
-- **Created:** 2026-06-25
-- **Modified:** 2026-06-25
+- [Semsee Submissions API](https://apis.io/apis/semsee/semsee-submissions-api/) — Partner-gated Upload/Download integration that pushes ACORD-based application and submission data from an agency management system (AMS) into the Semsee…
+- [Semsee Quotes API](https://apis.io/apis/semsee/semsee-quotes-api/) — Partner-gated download of multi-carrier quote results back into an AMS or commercial rater so agents can compare and bind without re-keying. No public…
+- [Semsee Carriers API](https://apis.io/apis/semsee/semsee-carriers-api/) — Carrier and MGA connectivity through which Semsee routes submissions to 50+ markets via carrier API and RPA integrations, including class-code and…
+- [Semsee Webhooks API](https://apis.io/apis/semsee/semsee-webhooks-api/) — No public webhook or event-notification surface is documented by Semsee. This entry is a placeholder reflecting that event-driven callbacks, if they exist,…
 
-## APIs
+### Published properties
 
-### Semsee Submissions API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Partner-gated Upload/Download integration that pushes ACORD-based application and submission data from an agency management system (AMS) into the Semsee platform for multi-carrier quoting. No public, self-serve developer reference, endpoints, or base URL are documented; integration requires Semsee development resources and a partner agreement.
+#### MCP servers (1)
 
-- **Human URL:** [https://semsee.com/partners](https://semsee.com/partners)
+Model Context Protocol servers that expose the API to agents.
 
-#### Tags
+- [semsee](https://apis.io/servers/semsee/semsee/)
 
-- Submissions
-- Applications
-- ACORD
+#### Collections (1)
 
-#### Properties
+Postman and Open Collection request collections.
 
-- [Documentation](https://semsee.com/partners)
-- [OpenAPI](openapi/semsee-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/semsee.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/semsee.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Semsee API](https://apis.io/collections/semsee/open-semsee/)
 
-### Semsee Quotes API
+#### Security (3)
 
-Partner-gated download of multi-carrier quote results back into an AMS or commercial rater so agents can compare and bind without re-keying. No public endpoint, schema, or base URL is published; access is via partner integration only.
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Human URL:** [https://semsee.com/partners](https://semsee.com/partners)
+- [Semsee Domain Security](https://apis.io/security/semsee/semsee-domain-security/)
+- [Semsee Trust Center](https://apis.io/security/semsee/semsee-trust-center/)
+- [Semsee Vulnerability Disclosure](https://apis.io/security/semsee/semsee-vulnerability-disclosure/)
 
-#### Tags
+#### Plans and pricing (1)
 
-- Quotes
-- Rating
-- Download
+Published plans, tiers and prices.
 
-#### Properties
+- [Semsee Plans Pricing](https://apis.io/plans/semsee/semsee-plans-pricing/)
 
-- [Documentation](https://semsee.com/partners)
-- [OpenAPI](openapi/semsee-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/semsee.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/semsee.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### Rate limits (1)
 
-### Semsee Carriers API
+Published request limits.
 
-Carrier and MGA connectivity through which Semsee routes submissions to 50+ markets via carrier API and RPA integrations, including class-code and market-appetite matching. This is internal platform connectivity; no public developer-facing carrier API is documented.
+- [Semsee Rate Limits](https://apis.io/rate-limits/semsee/semsee-rate-limits/)
 
-- **Human URL:** [https://semsee.com/carriers-mgas-semsee](https://semsee.com/carriers-mgas-semsee)
+#### FinOps (1)
 
-#### Tags
+What the API costs to run, by operation.
 
-- Carriers
-- MGA
-- Appetite
+- [Semsee Finops](https://apis.io/finops/semsee/semsee-finops/)
 
-#### Properties
+## Where to find this API
 
-- [Documentation](https://semsee.com/carriers-mgas-semsee)
-- [OpenAPI](openapi/semsee-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/semsee.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/semsee.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-### Semsee Webhooks API
-
-No public webhook or event-notification surface is documented by Semsee. This entry is a placeholder reflecting that event-driven callbacks, if they exist, are part of a private partner integration and are not publicly specified.
-
-- **Human URL:** [https://semsee.com/partners](https://semsee.com/partners)
-
-#### Tags
-
-- Webhooks
-- Events
-- Notifications
-
-#### Properties
-
-- [Documentation](https://semsee.com/partners)
-- [OpenAPI](openapi/semsee-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/semsee.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/semsee.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/semsee)
 - [Website](https://www.semsee.com)
 - [Documentation](https://help.semsee.com)
-- [Plans](plans/semsee-plans-pricing.yml)
-- [Rate Limits](rate-limits/semsee-rate-limits.yml)
-- [Fin Ops](finops/semsee-finops.yml)
+- [Blog](https://semsee.com/blog/rss.xml)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 22.5** — emerging · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 68.3 |
+| Contract quality | 29.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 16.2 |
+| Access clarity | 15.8 |
+
+**Agent readiness 25.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 14.9** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/semsee/](https://apis.io/providers/semsee/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Semsee: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/semsee/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
